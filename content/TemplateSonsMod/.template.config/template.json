@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Toni Macaroni",
+  "classifications": [ "Sons", "Sotf", "Mod" ],
+  "identity": "BaseMod.SotfMods.CSharp",
+  "name": "Sons of the Forest Mod",
+  "shortName": "sotfmod",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "TemplateSonsMod",
+  "symbols":{
+    "gameDirPath": {
+      "type": "parameter",
+      "defaultValue": "PathToYourGameDir",
+      "replaces":"PathToYourGameDir"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "rename": {
+            "TemplateSonsMod.csproj.user.tmpl": "TemplateSonsMod.csproj.user"
+          }
+        }
+      ]
+    }
+  ]
+}
