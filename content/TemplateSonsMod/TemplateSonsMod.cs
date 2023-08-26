@@ -4,15 +4,15 @@ namespace TemplateSonsMod;
 
 public class TemplateSonsMod : SonsMod
 {
-    public override void OnInitializeMod()
+    protected override void OnInitializeMod()
     {
-        // Do your early mod initialization which doesn't involve game or sdk stuff here
+        // Do your early mod initialization which doesn't involve game or sdk references here
     }
 
     protected override void OnSdkInitialized()
     {
-        // Do your mod initialization which involves game or sdk stuff here
-        // This is for stuff like UI creation event registration etc.
+        // Do your mod initialization which involves game or sdk references here
+        // This is for stuff like UI creation, event registration etc.
         
         TemplateSonsModUi.Create();
     }

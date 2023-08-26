@@ -8,7 +8,7 @@
     <Authors>Toni Macaroni</Authors>
     <Description>Mod templates for the RedLoader and Sons of the Forest</Description>
     <PackageTags>dotnet-new;templates;modding;sotf;sons;redloader</PackageTags>
-    <PackageProjectUrl>https://github.com/ToniMacaroni/RedLoaderTemplates</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ToniMacaroni/RedLoader.Templates</PackageProjectUrl>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
