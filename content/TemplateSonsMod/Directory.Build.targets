@@ -15,7 +15,7 @@
         <Message Text="Copying '$(AssemblyName)' to '$(GameDir)'." Importance="high" Condition="$(CanCopy)"/>
         <Copy SourceFiles="$(OutputAssemblyName).dll" DestinationFiles="$(GameDir)\Mods\$(AssemblyName).dll" Condition="$(CanCopy)"/>
         <Copy SourceFiles="$(OutputAssemblyName).pdb" DestinationFiles="$(GameDir)\Mods\$(AssemblyName).pdb" Condition="'$(CanCopy)' AND Exists('$(OutputAssemblyName).pdb')"/>
-        <Copy SourceFiles="$(OutputPath)manifest.json" DestinationFiles="$(GameDir)\Mods\SampleSonsMod\manifest.json" Condition="'$(CanCopy)' AND Exists('$(OutputPath)manifest.json')"/>
+        <Copy SourceFiles="$(OutputPath)manifest.json" DestinationFiles="$(GameDir)\Mods\$(AssemblyName)\manifest.json" Condition="'$(CanCopy)' AND Exists('$(OutputPath)manifest.json')"/>
     </Target>
     
     <Target Name="CreateModDir" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
