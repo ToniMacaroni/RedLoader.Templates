@@ -22,7 +22,8 @@
       "modifiers": [
         {
           "rename": {
-            "TemplateSonsMod.csproj.user.tmpl": "TemplateSonsMod.csproj.user"
+            "TemplateSonsMod.csproj.user.tmpl": "TemplateSonsMod.csproj.user",
+            "run": ".run"
           }
         }
       ]

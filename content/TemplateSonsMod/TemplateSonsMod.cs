@@ -26,4 +26,12 @@ public class TemplateSonsMod : SonsMod
     // public override void OnUpdate()
     // {
     // }
+
+    // public override void Configure(ModConfigurator config) => config
+    //     .SubscribeOnWorldUpdate(OnWorldUpdate);
+
+    // private void OnWorldUpdate()
+    // {
+    //     // called every frame when the player is in the world
+    // }
 }

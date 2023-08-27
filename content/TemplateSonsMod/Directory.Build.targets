@@ -13,9 +13,9 @@
         <Warning Text="$(CopyError)" Condition="'$(CopyError)' != ''"/>
         <Warning Text="$(ManifestWarning)" Condition="'$(ManifestWarning)' != ''"/>
         <Message Text="Copying '$(AssemblyName)' to '$(GameDir)'." Importance="high" Condition="$(CanCopy)"/>
-        <Copy SourceFiles="$(OutputAssemblyName).dll" DestinationFiles="$(GameDir)\$(AssemblyName).dll" Condition="$(CanCopy)"/>
-        <Copy SourceFiles="$(OutputAssemblyName).pdb" DestinationFiles="$(GameDir)\$(AssemblyName).pdb" Condition="'$(CanCopy)' AND Exists('$(OutputAssemblyName).pdb')"/>
-        <Copy SourceFiles="$(OutputPath)manifest.json" DestinationFiles="$(GameDir)\SampleSonsMod\manifest.json" Condition="'$(CanCopy)' AND Exists('$(OutputPath)manifest.json')"/>
+        <Copy SourceFiles="$(OutputAssemblyName).dll" DestinationFiles="$(GameDir)\Mods\$(AssemblyName).dll" Condition="$(CanCopy)"/>
+        <Copy SourceFiles="$(OutputAssemblyName).pdb" DestinationFiles="$(GameDir)\Mods\$(AssemblyName).pdb" Condition="'$(CanCopy)' AND Exists('$(OutputAssemblyName).pdb')"/>
+        <Copy SourceFiles="$(OutputPath)manifest.json" DestinationFiles="$(GameDir)\Mods\SampleSonsMod\manifest.json" Condition="'$(CanCopy)' AND Exists('$(OutputPath)manifest.json')"/>
     </Target>
     
     <Target Name="CreateModDir" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
@@ -37,7 +37,7 @@
         <Copy SourceFiles="$(OutputPath)manifest.json" DestinationFiles="$(BuildModDir)\Mods\$(AssemblyName)\manifest.json" Condition="'$(CanCopy)' AND Exists('$(OutputPath)manifest.json')"/>
     </Target>
     
-    <Target Name="CreateZip" AfterTargets="CreateModDir">
+    <Target Name="CreateZip" AfterTargets="CreateModDir" Condition="'$(Configuration)' == 'Release'">
         <PropertyGroup>
             <BuildDir>$(SolutionDir)ReleaseBuild\</BuildDir>
             <BuildModDir>$(BuildDir)$(AssemblyName)</BuildModDir>
