@@ -4,9 +4,17 @@ namespace TemplateSonsMod;
 
 public class TemplateSonsMod : SonsMod
 {
+    public TemplateSonsMod()
+    {
+        // Don't register any update callbacks here. Manually register them instead.
+        // Removing this will call OnUpdate, OnFixedUpdate etc. even if you don't use them.
+        NoUpdate = true;
+    }
+
     protected override void OnInitializeMod()
     {
         // Do your early mod initialization which doesn't involve game or sdk references here
+        Config.Init();
     }
 
     protected override void OnSdkInitialized()
@@ -25,13 +33,5 @@ public class TemplateSonsMod : SonsMod
     // This is called every frame.
     // public override void OnUpdate()
     // {
-    // }
-
-    // public override void Configure(ModConfigurator config) => config
-    //     .SubscribeOnWorldUpdate(OnWorldUpdate);
-
-    // private void OnWorldUpdate()
-    // {
-    //     // called every frame when the player is in the world
     // }
 }
