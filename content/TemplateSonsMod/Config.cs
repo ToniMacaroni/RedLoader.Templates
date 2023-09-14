@@ -1,3 +1,5 @@
+using RedLoader;
+
 namespace TemplateSonsMod;
 
 public static class Config
