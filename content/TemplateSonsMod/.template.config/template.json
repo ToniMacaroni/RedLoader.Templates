@@ -15,6 +15,11 @@
       "type": "parameter",
       "defaultValue": "PathToYourGameDir",
       "replaces":"PathToYourGameDir"
+    },
+    "comments": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true"
     }
   },
   "sources": [
