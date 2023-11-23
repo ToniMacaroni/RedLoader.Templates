@@ -5,5 +5,6 @@
   "version": "1.0.0",
   "description": "A mod that does something.",
   "gameVersion": "1.0.0",
+  "type": "Mod",
   "url": "..."
 }
