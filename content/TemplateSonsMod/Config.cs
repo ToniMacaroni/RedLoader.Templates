@@ -18,4 +18,11 @@ public static class Config
         //     "Some entry",
         //     "Some entry that does some stuff.");
     }
+
+    #if (comments)
+    // Same as the callback in "CreateSettings". Called when the settings ui is closed.
+    #endif
+    public static void OnSettingsUiClosed()
+    {
+    }
 }

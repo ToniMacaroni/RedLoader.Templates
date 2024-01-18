@@ -34,6 +34,11 @@ public class TemplateSonsMod : SonsMod
         // This is for stuff like UI creation, event registration etc.
         #endif
         TemplateSonsModUi.Create();
+
+        #if (comments)
+        // Add in-game settings ui for your mod.
+        #endif
+        // SettingsRegistry.CreateSettings(this, null, typeof(Config));
     }
 
     protected override void OnGameStart()

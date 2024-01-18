@@ -24,6 +24,9 @@
       <Reference Include="Sons">
         <HintPath>$(GameDir)\_RedLoader\Game\Sons.dll</HintPath>
       </Reference>
+        <Reference Include="Endnight">
+            <HintPath>$(GameDir)\_RedLoader\Game\Endnight.dll</HintPath>
+        </Reference>
       <Reference Include="SonsSdk">
         <HintPath>$(GameDir)\_RedLoader\net6\SonsSdk.dll</HintPath>
       </Reference>
@@ -32,6 +35,45 @@
       </Reference>
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="0Harmony">
+        <HintPath>$(GameDir)\_RedLoader\net6\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="bolt">
+        <HintPath>$(GameDir)\_RedLoader\Game\bolt.dll</HintPath>
+      </Reference>
+      <Reference Include="Bolt.Unity">
+        <HintPath>$(GameDir)\_RedLoader\Game\Bolt.Unity.dll</HintPath>
+      </Reference>
+      <Reference Include="bolt.user">
+        <HintPath>$(GameDir)\_RedLoader\Game\bolt.user.dll</HintPath>
+      </Reference>
+      <Reference Include="Sons.Construction">
+        <HintPath>$(GameDir)\_RedLoader\Game\Sons.Construction.dll</HintPath>
+      </Reference>
+      <Reference Include="Sons.Construction.Utils">
+        <HintPath>$(GameDir)\_RedLoader\Game\Sons.Construction.Utils.dll</HintPath>
+      </Reference>
+      <Reference Include="Sons.Gui">
+        <HintPath>$(GameDir)\_RedLoader\Game\Sons.Gui.dll</HintPath>
+      </Reference>
+      <Reference Include="Sons.Item">
+        <HintPath>$(GameDir)\_RedLoader\Game\Sons.Item.dll</HintPath>
+      </Reference>
+      <Reference Include="Sons.Multiplayer">
+        <HintPath>$(GameDir)\_RedLoader\Game\Sons.Multiplayer.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.AssetBundleModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.PhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+        <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+        <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.UIModule.dll</HintPath>
       </Reference>
     </ItemGroup>
 
