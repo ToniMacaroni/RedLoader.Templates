@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.2.6</PackageVersion>
+    <PackageVersion>1.2.7</PackageVersion>
     <PackageId>RedLoader.Templates</PackageId>
     <Title>RedLoader mod templates</Title>
     <Authors>Toni Macaroni</Authors>

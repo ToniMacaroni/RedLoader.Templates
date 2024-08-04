@@ -1,4 +1,5 @@
 using RedLoader;
+using SUI;
 
 namespace TemplateSonsMod;
 
@@ -7,6 +8,8 @@ public static class Config
     public static ConfigCategory Category { get; private set; }
 
     //public static ConfigEntry<bool> SomeEntry { get; private set; }
+
+    private static SettingsRegistry.SettingsEntry _settingsEntry; // Settings UI entry for this config. Automatically assigned.
 
     public static void Init()
     {
