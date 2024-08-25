@@ -9,11 +9,8 @@ public static class Config
 
     //public static ConfigEntry<bool> SomeEntry { get; private set; }
 
-    private static SettingsRegistry.SettingsEntry _settingsEntry; // Settings UI entry for this config. Automatically assigned.
-=======
     // Auto populated after calling SettingsRegistry.CreateSettings...
     private static SettingsRegistry.SettingsEntry _settingsEntry;
->>>>>>> Stashed changes
 
     public static void Init()
     {
