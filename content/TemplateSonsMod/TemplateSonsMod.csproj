@@ -24,9 +24,9 @@
       <Reference Include="Sons">
         <HintPath>$(GameDir)\_RedLoader\Game\Sons.dll</HintPath>
       </Reference>
-        <Reference Include="Endnight">
-            <HintPath>$(GameDir)\_RedLoader\Game\Endnight.dll</HintPath>
-        </Reference>
+      <Reference Include="Endnight">
+          <HintPath>$(GameDir)\_RedLoader\Game\Endnight.dll</HintPath>
+      </Reference>
       <Reference Include="SonsSdk">
         <HintPath>$(GameDir)\_RedLoader\net6\SonsSdk.dll</HintPath>
       </Reference>
@@ -74,6 +74,12 @@
       </Reference>
       <Reference Include="UnityEngine.UIModule">
         <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.UIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.InputLegacyModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputModule">
+        <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.InputModule.dll</HintPath>
       </Reference>
     </ItemGroup>
 
